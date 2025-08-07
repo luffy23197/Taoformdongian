@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sở thích của bạn</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 2rem;
+            background-color: #d4fcff;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 700px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 4px solid #d4fcff;
+            box-sizing: border-box;
+            padding-bottom: 1rem;
+        }
+        .form-header {
+            background-color: #ff4500;
+            color: #fff;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 0.75rem;
+        }
+        form {
+            padding: 1rem 2rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .form-group label {
+            width: 120px;
+            color: #0066cc;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            flex: 1;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #999;
+            border-radius: 2px;
+        }
+        .hobbies {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem 2rem;
+            margin-left: 120px;
+            margin-bottom: 1rem;
+        }
+        .hobbies label {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            color: #ff8c42;
+        }
+        .hobbies input {
+            margin-right: 0.5rem;
+        }
+        .form-buttons {
+            margin-left: 120px;
+        }
+        .form-buttons button {
+            padding: 0.5rem 1.25rem;
+            font-size: 1rem;
+            margin-right: 1rem;
+            border: 1px solid #888;
+            border-radius: 3px;
+            background: #e0e0d1;
+            cursor: pointer;
+        }
+        .form-buttons button:hover {
+            background: #d0d0b1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="form-header">SỞ THÍCH CỦA BẠN</div>
+    <form action="#" method="post">
+
+        <div class="form-group">
+            <label for="yourname">Họ và tên:</label>
+            <input type="text" id="yourname" name="yourname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Sở thích:</label>
+        </div>
+        <div class="hobbies">
+            <label><input type="checkbox" name="hobby" value="The thao">Thể thao</label>
+            <label><input type="checkbox" name="hobby" value="Am nhac">Âm nhạc</label>
+            <label><input type="checkbox" name="hobby" value="Doc sach">Đọc sách</label>
+            <label><input type="checkbox" name="hobby" value="Luot web">Lướt web</label>
+            <label><input type="checkbox" name="hobby" value="Choi game">Chơi game</label>
+            <label><input type="checkbox" name="hobby" value="Dien anh">Điện ảnh</label>
+            <label><input type="checkbox" name="hobby" value="Du lich">Du lịch</label>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit">Gửi thông tin</button>
+            <button type="reset">Nhập lại</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
